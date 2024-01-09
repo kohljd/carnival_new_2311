@@ -19,4 +19,8 @@ class Visitor
         return true if @height >= ride_height_req
         false
     end
+
+    def charge(amount)
+        @spending_money -= amount
+    end
 end
