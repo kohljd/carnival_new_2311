@@ -17,9 +17,5 @@ class Carnival
 
     def most_popular_ride
         @rides.max_by {|ride| ride.total_times_rode}
-        #     ride.rider_log.max_by do |visitor, count|
-        #         count
-        #     end
-        # end
     end
 end
