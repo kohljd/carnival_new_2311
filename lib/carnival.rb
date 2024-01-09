@@ -1,6 +1,4 @@
 class Carnival
-    @@carnival_revenue = 0
-
     attr_reader :name,
                 :rides,
                 :duration
