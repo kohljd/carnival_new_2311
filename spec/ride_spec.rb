@@ -76,5 +76,12 @@ RSpec.describe Ride do
             #check ride 3 revenue
             expect(ride3.total_revenue).to eq(2)
         end
+
+        it "calculates total times rode" do
+            @ride1.board_rider(@visitor1)
+            @ride1.board_rider(@visitor2)
+            @ride1.board_rider(@visitor1)
+            expect(@ride1.total_times_rode).to eq(3)
+        end
     end
 end

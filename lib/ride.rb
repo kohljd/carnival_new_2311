@@ -1,4 +1,5 @@
 class Ride
+    
     attr_reader :name,
                 :min_height,
                 :admission_fee,
@@ -21,5 +22,9 @@ class Ride
             @rider_log[visitor] += 1
             @total_revenue += @admission_fee
         end
+    end
+
+    def total_times_rode
+        @rider_log.values.sum
     end
 end
