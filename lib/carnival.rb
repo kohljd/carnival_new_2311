@@ -30,4 +30,15 @@ class Carnival
         @rides.each{|ride| all_visitor_keys << ride.rider_log.keys}
         all_visitor_keys.flatten.uniq.size
     end
+
+    def list_visitors
+        visitors_list = []
+        all_visitor_keys = []
+        @rides.each{|ride| all_visitor_keys << ride.rider_log.keys}
+        visitors_list = all_visitor_keys.flatten.uniq
+    end
+
+    def summary(carnival_name)
+        
+    end
 end
