@@ -18,4 +18,8 @@ class Carnival
     def most_popular_ride
         @rides.max_by {|ride| ride.total_times_rode}
     end
+
+    def most_profitable_ride
+        @rides.max_by {|ride| ride.total_revenue}
+    end
 end

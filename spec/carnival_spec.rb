@@ -27,7 +27,7 @@ RSpec.describe Carnival do
             @carnival.add_ride(@ride1)
             @carnival.add_ride(@ride2)
             @visitor1 = Visitor.new('Bruce', 54, '$10')
-            @visitor2 = Visitor.new('Tucker', 36, '$5')
+            @visitor2 = Visitor.new('Tucker', 36, '$10')
             @visitor1.add_preference(:gentle)
             @visitor2.add_preference(:gentle)
         end
