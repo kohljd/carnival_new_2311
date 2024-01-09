@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-RSpec.describe visitor do
+RSpec.describe Visitor do
     it "is a Visitor object" do
         visitor1 = Visitor.new('Bruce', 54, '$10')
-        expect(visitor).to be_an_instance_of(Visitor)
+        expect(visitor1).to be_an_instance_of(Visitor)
     end
 
     it "can state visitor's details" do
