@@ -24,4 +24,10 @@ class Carnival
     def total_carnival_revenue
         @rides.sum {|ride| ride.total_revenue}
     end
+
+    def total_visitors
+        all_visitor_keys = []
+        @rides.each{|ride| all_visitor_keys << ride.rider_log.keys}
+        all_visitor_keys.flatten.uniq.size
+    end
 end
