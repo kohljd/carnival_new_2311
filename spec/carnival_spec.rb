@@ -15,7 +15,7 @@ RSpec.describe Carnival do
     end
 
     it "can add rides" do
-         = Ride.new({ name: 'Carousel', min_height: 24, admission_fee: 1, excitement: :gentle })
+        ride1 = Ride.new({ name: 'Carousel', min_height: 24, admission_fee: 1, excitement: :gentle })
         @carnival.add_ride(ride1)
         expect(@carnival.rides).to eq([ride1])
     end
@@ -59,6 +59,6 @@ RSpec.describe Carnival do
         ride1.board_rider(visitor1)
         ride1.board_rider(visitor2)
         ride2.board_rider(visitor2)
-        expect(@carnival.total_carnival_revenue.to eq(7)
+        expect(@carnival.total_carnival_revenue).to eq(7)
     end
 end
